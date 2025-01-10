@@ -35,7 +35,7 @@ except ValueError:
 entrada = input("Digite uma palavra ou frase: ")
 if isinstance(entrada, str):
     formatado = entrada.replace(" ", "").lower()
-    if formatado == formatado[::-1]:
+    if formatado == formatado[::-1]: # Inverte a string
         print("É um palíndromo.")
     else:
         print("Não é um palíndromo.")
